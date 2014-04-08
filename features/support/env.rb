@@ -10,3 +10,9 @@ Capybara.configure do |config|
   config.app_host                = 'http://en.wikipedia.org/'
   config.save_and_open_page_path = 'tmp/'
 end
+
+RSpec.configure do |config|
+  config.expect_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
+end
