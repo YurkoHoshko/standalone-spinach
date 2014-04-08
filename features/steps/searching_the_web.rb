@@ -9,7 +9,7 @@ class Spinach::Features::SearchingTheWeb < Spinach::FeatureSteps
     click_button 'Search'
   end
 
-  step 'I see a hit for the vegatable Spinach' do
+  step 'I see a hit for the vegetable Spinach' do
     page.should have_content 'Spinach (Spinacia oleracea) is an edible flowering plant in the family of Amaranthaceae'
   end
 
